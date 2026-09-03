@@ -11,7 +11,7 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="form-header">
 
         <h1>SAM TECH</h1>
@@ -21,7 +21,7 @@
     </header>
 
 
-    <!-- Main Form Section -->
+    <!-- MAIN FORM SECTION -->
     <section class="form-section">
 
         <div class="form-card">
@@ -34,7 +34,12 @@
             </p>
 
 
-            <form>
+            <!-- FORMSPREE FORM -->
+            <form
+    action="https://formspree.io/f/mkjnzngj"
+    method="POST"
+>
+    <input type="hidden" name="_next" value="https://sam-tech-website.vercel.app/thank-you.html">
 
 
                 <!-- PERSONAL INFORMATION -->
@@ -43,19 +48,35 @@
                     <legend>Personal Information</legend>
 
 
-                    <label for="name">
-                        Full Name
+                    <!-- FIRST NAME -->
+                    <label for="first-name">
+                        First Name
                     </label>
 
                     <input
                         type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your full name"
+                        id="first-name"
+                        name="first-name"
+                        placeholder="Enter your first name"
                         required
                     >
 
 
+                    <!-- LAST NAME -->
+                    <label for="last-name">
+                        Last Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        placeholder="Enter your last name"
+                        required
+                    >
+
+
+                    <!-- EMAIL -->
                     <label for="email">
                         Email Address
                     </label>
@@ -69,6 +90,7 @@
                     >
 
 
+                    <!-- PHONE -->
                     <label for="phone">
                         Phone / WhatsApp Number
                     </label>
@@ -82,6 +104,7 @@
                     >
 
 
+                    <!-- BUSINESS -->
                     <label for="business">
                         Business / Company Name
                     </label>
@@ -103,6 +126,7 @@
                     <legend>Website Information</legend>
 
 
+                    <!-- WEBSITE TYPE -->
                     <label for="website-type">
                         What type of website do you need?
                     </label>
@@ -140,7 +164,7 @@
                     </select>
 
 
-
+                    <!-- PACKAGE -->
                     <label for="package">
                         Which package are you interested in?
                     </label>
@@ -174,7 +198,7 @@
                     </select>
 
 
-
+                    <!-- PROJECT DESCRIPTION -->
                     <label for="description">
                         Tell us about your project
                     </label>
@@ -197,6 +221,7 @@
                     <legend>Website Requirements</legend>
 
 
+                    <!-- LOGO -->
                     <p class="form-question">
                         Do you already have a logo?
                     </p>
@@ -224,7 +249,7 @@
                     </div>
 
 
-
+                    <!-- CONTENT -->
                     <p class="form-question">
                         Do you already have images/content for the website?
                     </p>
@@ -252,7 +277,7 @@
                     </div>
 
 
-
+                    <!-- PAYMENT -->
                     <p class="form-question">
                         Do you need an online payment system?
                     </p>
@@ -289,7 +314,7 @@
                     </div>
 
 
-
+                    <!-- WHATSAPP -->
                     <p class="form-question">
                         Do you need WhatsApp integration?
                     </p>
@@ -320,12 +345,13 @@
 
 
 
-                <!-- DOMAIN INFORMATION -->
+                <!-- DOMAIN AND HOSTING -->
                 <fieldset>
 
                     <legend>Domain & Hosting</legend>
 
 
+                    <!-- DOMAIN -->
                     <label for="domain">
                         Do you already have a domain name?
                     </label>
@@ -354,7 +380,7 @@
                     </select>
 
 
-
+                    <!-- HOSTING -->
                     <label for="hosting">
                         Do you already have web hosting?
                     </label>
@@ -490,9 +516,6 @@
             </a>
 
         </div>
-        <a href="contact.html" class="project-btn">
-    Start a Project
-</a>
 
 
         <p class="copyright">
@@ -502,7 +525,7 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
