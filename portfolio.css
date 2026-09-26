@@ -1,0 +1,157 @@
+
+css
+/* ==============================
+   PORTFOLIO SECTION
+================================= */
+
+#portfolio {
+    padding: 60px 20px;
+}
+
+.portfolio-section {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.portfolio-section > p {
+    color: #374151;
+    margin-bottom: 35px;
+}
+
+
+/* ==============================
+   PROJECT CONTAINER
+================================= */
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+/* ==============================
+   PROJECT CARD
+================================= */
+
+.portfolio-project {
+    width: 300px;
+    background-color: #f1f5f9;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: left;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: 0.3s ease;
+}
+
+.portfolio-project:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ==============================
+   PROJECT TITLE
+================================= */
+
+.portfolio-project h3 {
+    color: #2563eb;
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+
+/* ==============================
+   PROJECT DESCRIPTION
+================================= */
+
+.portfolio-project p {
+    color: #374151;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   TECHNOLOGIES
+================================= */
+
+.portfolio-project .project-tech {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+
+/* ==============================
+   PROJECT BUTTON
+================================= */
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.project-btn:hover {
+    background-color: #0f172a;
+}
+
+
+/* ==============================
+   DARK MODE
+================================= */
+
+.dark-mode .portfolio-section h2 {
+    color: white;
+}
+
+.dark-mode .portfolio-section > p {
+    color: #e5e7eb;
+}
+
+.dark-mode .portfolio-project {
+    background-color: #1e293b;
+}
+
+.dark-mode .portfolio-project h3 {
+    color: #60a5fa;
+}
+
+.dark-mode .portfolio-project p {
+    color: white;
+}
+
+
+/* ==============================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+    #portfolio {
+        padding: 40px 15px;
+    }
+
+    .portfolio-project {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+
